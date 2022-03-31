@@ -1,0 +1,22 @@
+.formContainer {
+    padding-inline: 100px;
+    padding-block: 50px;
+    width: 60vw;
+}
+
+.formLabel {
+    font-size: 24px;
+}
+
+.header .btn-custom, .header .btn-custom:hover, .header .btn-custom:focus {
+    background-color: #0f756e;
+    border-color: #0f756e;
+}
+
+.recipeFormIngredients {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 1em;
+    align-items: end;
+    margin-bottom: 20px;
+}

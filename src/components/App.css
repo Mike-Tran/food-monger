@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* **********FORM********** */
+#root {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header {
+    border-bottom: 1px solid rgba(214, 210, 210, 0.568);
+    height: 60px
+}
+
+#root a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.appContentContainer {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italicize {
+    font-style: italic;
+}
+
+.listItem {
+    padding-block: 10px;
+}
+
+.line-clamp3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Change this line if you want. In this case it trimmed the text to 3 lines. */
+    overflow: hidden;
+}
+
+.recipeCardTitle {
+    height: 50px;
+}
