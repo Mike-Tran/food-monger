@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* **********FORM********** */
 #root {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
 .header {
     border-bottom: 1px solid rgba(214, 210, 210, 0.568);
-    height: 60px
+    height: 60px;
 }
 
 #root a {

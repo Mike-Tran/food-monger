@@ -1,0 +1,38 @@
+.dashboard-wrapper {
+    color: white;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "lfc rc1"
+        "lfc rc2"
+}
+
+.dashboard-left-wrapper {
+    background-image: url(../images/LeftDashImage.jpg);
+    background-size: cover;
+    grid-area: lfc;
+}
+
+.dashboard-right-component1 {
+    background-image: url(../images/RightDashImage1.jpg);
+    background-size: cover;
+    height: 40vh;
+    grid-area: rc1;
+}
+
+.dashboard-right-component2 {
+    background-image: url(../images/RightDashImage2.jpg);
+    background-size: cover;
+    height: 40vh;
+    grid-area: rc2;
+}
+.centered {
+    font-size: 72px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}

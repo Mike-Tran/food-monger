@@ -17,9 +17,7 @@ function NewRecipeForm({ addRecipe }) {
   });
   
   useEffect(() => {
-    return () => {
-      // This is the cleanup function
-    }
+    return () => {}
   }, []);
 
   async function handleSubmit(e) {
@@ -146,7 +144,7 @@ function NewRecipeForm({ addRecipe }) {
         />
       </Form.Group>
 
-      <Button type="submit" className="btn">
+      <Button type="submit" className="btn-custom btn">
         Submit
       </Button>
     </Form>

@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
-import { Image, Spinner } from 'react-bootstrap'
+import { Image } from 'react-bootstrap'
 import { PlusCircleFill } from 'react-bootstrap-icons';
+import NotFound from "./NotFound"
 import "../styles/RecipeDetail.css";
 
 const recipeAPI = "http://localhost:8004/recipes/";
@@ -39,11 +40,23 @@ function RecipeDetail() {
                                 )}
                             )}
                         </div>
+
+                        <h3 className="bold">Steps</h3>
+                        <div className="ingredientsList">
+                            {recipe.steps.map(step => {
+                                return (
+                                    <div key={step} className="listItem" >
+                                        <PlusCircleFill/>
+                                        {` ${!step ? "" : step}`}
+                                    </div>
+                                )}
+                            )}
+                        </div>
                     </div>
                 </div>
             )
         } else {
-            return <Spinner animation="border" variant="success" />
+            return <NotFound />
         }
     }
     

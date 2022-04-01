@@ -6,7 +6,6 @@ import {Link} from "react-router-dom";
 function RecipeList({recipes, handleCardClick}) {
   return (
       <div className="recipeListContainer">
-        {/* <Row xs={1} sm={2} md={3} lg={4} className="g-4"> */}
         {recipes.map((recipe) => {
             return (
                 <RecipeCard 
@@ -16,7 +15,6 @@ function RecipeList({recipes, handleCardClick}) {
                 />
             )
         })}
-        {/* </Row> */}
     </div>
   );
 }

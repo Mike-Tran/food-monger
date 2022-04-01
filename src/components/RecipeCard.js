@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, Col } from "react-bootstrap";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function RecipeCard({recipe, handleCardClick}) {
     const {name, ingredients, steps, description, imageURL} = recipe;
